@@ -2,6 +2,7 @@ import './App.css';
 import {useDispatch, useSelector} from "react-redux";
 import {UserComponent} from "./components/user-component";
 import {UserReducerActions} from "./store/reducers/users-reducer/actions";
+import {FirmComponent} from "./components/firm-component";
 
 function App() {
     // useSelector()
@@ -23,10 +24,11 @@ function App() {
 
     return (
         <div>
-            hello word
+            {/*hello word*/}
 
-            <button onClick={addUser}>Click</button>
-            <UserComponent/>
+            {/*<button onClick={addUser}>Click</button>*/}
+            {/*<UserComponent/>*/}
+            <FirmComponent/>
 
         </div>
     );
