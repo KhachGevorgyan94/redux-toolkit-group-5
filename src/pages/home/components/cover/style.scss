@@ -1,0 +1,42 @@
+@import "src/assets/style/variables";
+.cover-left {
+  width: 70%;
+}
+
+.cover-right {
+  width: 30%;
+}
+
+.cover-main{
+  min-height: 430px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  &:before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    content: '';
+    z-index: 6;
+  }
+  h1{
+    z-index: 111;
+    color: $white;
+    font-size: $font-size-40;
+  }
+  p{
+    z-index: 111;
+    color: $white;
+    font-size: $font-size-20;
+    max-width: 500px;
+    text-align: center;
+  }
+  button{
+    z-index: 111;
+    max-width: 200px;
+  }
+}

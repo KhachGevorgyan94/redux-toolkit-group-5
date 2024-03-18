@@ -1,0 +1,30 @@
+@import "src/assets/style/variables";
+
+.main-button {
+  width: 100%;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: $transition;
+
+  &.base {
+    background-color: $yellow;
+
+    &:hover {
+      background-color: $yellow-1;
+      color: $white;
+    }
+  }
+
+  &.secondary {
+    border: 1px solid $white;
+    background-color: transparent;
+    color: $white;
+
+    &:hover {
+      background-color: $white;
+      color: $black;
+    }
+  }
+}

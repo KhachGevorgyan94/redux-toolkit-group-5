@@ -1,0 +1,13 @@
+@import "src/assets/style/variables";
+.section-title{
+  h3{
+    color: $black;
+    font-size: $font-size-24;
+    text-transform: uppercase;
+  }
+  span{
+    margin-top: 10px;
+    flex: 1;
+    border-bottom: 1px dashed black;
+  }
+}

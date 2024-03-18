@@ -1,0 +1,38 @@
+@import "./variables";
+
+
+
+@mixin screen-max-width-1200 {
+  @media (max-width: $max-width-1200) {
+    @content;
+  }
+}
+
+@mixin screen-max-width-991 {
+  @media (max-width: $max-width-991) {
+    @content;
+  }
+}
+
+@mixin screen-max-width-767 {
+  @media (max-width: $max-width-767) {
+    @content;
+  }
+}
+
+@mixin screen-max-width-576 {
+  @media (max-width: $max-width-576) {
+    @content;
+  }
+}
+
+$sizes: 2;
+
+@while $sizes <= 40 {
+  .gap-#{$sizes} {
+    gap: #{$sizes}px;
+  }
+  $sizes: $sizes + 2;
+}
+
+
